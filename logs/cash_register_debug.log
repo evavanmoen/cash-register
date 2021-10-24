@@ -1,0 +1,38 @@
+2021-10-24 19:25:16,629 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 19:30:18,282 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:16:58,986 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:17:12,279 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:27:10,558 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:27:26,595 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:33:06,394 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:33:06,395 - __main__ - INFO - Products: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-24 20:33:53,133 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:33:53,133 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-24 20:34:52,326 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:34:52,326 - __main__ - ERROR - Error load configuration file: Expecting value: line 1 column 1 (char 0)
+2021-10-24 20:35:13,540 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:36:21,439 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:36:21,440 - __main__ - INFO - json file is not correct!
+2021-10-24 20:38:33,308 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 20:38:33,308 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-24 21:37:30,466 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:45:34,855 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:45:34,855 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-24 21:45:40,183 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:45:50,045 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:52:53,755 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:53:23,846 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:54:35,053 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:55:31,892 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:55:51,888 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:55:51,889 - __main__ - INFO - The json file is not correct by columns
+2021-10-24 21:55:56,141 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:56:00,264 - __main__ - INFO - The json file is not correct by columns
+2021-10-24 21:57:01,381 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:57:01,381 - __main__ - ERROR - The json file is not correct by columns
+2021-10-24 21:58:33,178 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:58:33,178 - __main__ - ERROR - The json file is not correct by columns
+2021-10-24 21:58:40,590 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:58:40,590 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-24 21:59:09,068 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-24 21:59:09,068 - __main__ - ERROR - The json file is empty
