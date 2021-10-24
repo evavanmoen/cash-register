@@ -1,0 +1,5 @@
+{
+  "code": ["VOUCHER", "TSHIRT", "PANTS"],
+  "name": ["Gift Card", "Summer T-Shirt", "Summer Pants"],
+  "price": [5.00, 20.00, 7.50]
+}
