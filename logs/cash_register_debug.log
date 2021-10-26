@@ -36,3 +36,28 @@
 2021-10-24 21:58:40,590 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
 2021-10-24 21:59:09,068 - __main__ - INFO - Reading json file: input/cash_register.json
 2021-10-24 21:59:09,068 - __main__ - ERROR - The json file is empty
+2021-10-25 10:07:32,926 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-25 10:07:56,504 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-25 10:08:03,941 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-25 10:08:31,803 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-25 11:34:49,537 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-25 11:34:49,539 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-25 12:13:17,425 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-25 12:13:17,426 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-25 12:13:17,426 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-25 12:14:01,455 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-25 12:14:01,456 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-25 12:14:01,456 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-25 12:15:39,382 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-25 12:15:39,383 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-25 12:15:39,384 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-25 12:21:06,688 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-25 12:21:15,160 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-25 12:21:15,161 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-25 12:21:15,161 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 15:59:49,422 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 15:59:49,423 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 15:59:49,423 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 16:07:27,279 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 16:07:27,280 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 16:07:27,280 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]

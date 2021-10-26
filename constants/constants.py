@@ -16,4 +16,17 @@ EXIT_CODE_BAD = 1
 PRODUCTS_CODE = "code"
 PRODUCTS_NAME = "name"
 PRODUCTS_PRICE = "price"
+PRODUCTS_UNITS = "units"
 PRODUCTS_COLUMNS = [PRODUCTS_CODE, PRODUCTS_NAME, PRODUCTS_PRICE]
+
+# ===============================================================================================
+# GROUP DISCOUNT FIELDS
+# ===============================================================================================
+GROUP_DISCOUNT_UNITS_INI = "units_ini"
+GROUP_DISCOUNT_UNITS_FIN = "units_fin"
+
+# ===============================================================================================
+# BULK DISCOUNT FIELDS
+# ===============================================================================================
+BULK_DISCOUNT_UNITS = "units"
+BULK_DISCOUNT_PRICE = "price"
