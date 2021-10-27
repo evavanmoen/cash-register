@@ -75,7 +75,7 @@ def bulk_discount(code, units, price, products):
 
 def group_discount(code, units_ini, units_fin, products):
     """This function collects the group discount that is requested for a specific product
-    (for example, 2x1 discount on VOUCHER items)
+    (for example, 2x1 discount on VOUCHER items and at the moment any number of items x 1)
     :param code: product code name
     :param units_ini: chosen units
     :param units_fin: units to pay
@@ -97,18 +97,20 @@ def group_discount(code, units_ini, units_fin, products):
                 if product[const.PRODUCTS_UNITS] >= units_ini:
 
                     # discounts 2x1, 3x1, (allx1) ...
-                    # if the number units is even
-                    if product[const.PRODUCTS_UNITS] % units_ini == 0 and units_fin == 1:
-                        product[const.PRODUCTS_UNITS] = product[const.PRODUCTS_UNITS] / units_ini
+                    if units_fin == 1:
 
-                    # or the number units is odd
-                    elif product[const.PRODUCTS_UNITS] % units_ini != 0 and units_fin == 1:
-                        units = product[const.PRODUCTS_UNITS]
-                        units -= 1
-                        product[const.PRODUCTS_UNITS] = (units / units_ini) + 1
+                        # if the number units is even
+                        if product[const.PRODUCTS_UNITS] % units_ini == 0:
+                            product[const.PRODUCTS_UNITS] = product[const.PRODUCTS_UNITS] / units_ini
 
-                    logger.info("New group discount on '{0}' items with {1} units chosen and paid for {2} unit "
-                                "({1}x{2})".format(code, units_ini, units_fin))
+                        # or the number units is odd
+                        elif product[const.PRODUCTS_UNITS] % units_ini != 0:
+                            units = product[const.PRODUCTS_UNITS]
+                            units -= 1
+                            product[const.PRODUCTS_UNITS] = (units / units_ini) + 1
+
+                        logger.info("New group discount on '{0}' items with {1} units chosen and paid for {2} unit "
+                                    "({1}x{2})".format(code, units_ini, units_fin))
                 else:
                     break
 
