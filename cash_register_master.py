@@ -247,7 +247,6 @@ def main():
 
     # EXERCISE CASE 4 (● Items: VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT - Total: 74.50€)
     # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
-    """
     logger.info("********************* TEST 4")
     scan("VOUCHER", products)
     scan("TSHIRT", products)
@@ -259,7 +258,7 @@ def main():
     
     logger.info("Products: {}".format(products))
     group_discount("VOUCHER", 2, 1, products)
-    bulk_discount("TSHIRT", 3, 19.00, products)"""
+    bulk_discount("TSHIRT", 3, 19.00, products)
 
     # OWN CASE (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, VOUCHER, VOUCHER, VOUCHER, VOUCHER: 84.50€)
     # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
