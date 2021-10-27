@@ -1094,3 +1094,5 @@
 2021-10-27 17:49:05,750 - __main__ - INFO - Total price: 74.5
 2021-10-27 18:42:11,364 - __main__ - INFO - Reading json file: input/cash_register.json
 2021-10-27 18:42:11,364 - __main__ - ERROR - The json file is not correct by negative values
+2021-10-27 18:44:01,721 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 18:44:01,721 - __main__ - ERROR - The json file is not correct by columns
