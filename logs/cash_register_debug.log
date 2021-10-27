@@ -61,3 +61,967 @@
 2021-10-26 16:07:27,279 - __main__ - INFO - Reading json file: input/cash_register.json
 2021-10-26 16:07:27,280 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
 2021-10-26 16:07:27,280 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 16:59:03,246 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 16:59:03,248 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 16:59:03,248 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 17:06:16,331 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 17:06:16,331 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 17:06:16,331 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 17:06:16,331 - __main__ - INFO - New group of discount on VOUCHER with 2 units chosen and paid for 1 unit
+2021-10-26 17:09:28,938 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 17:09:28,938 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 17:09:28,938 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 17:09:28,938 - __main__ - INFO - New group discount on VOUCHER items with 2 units chosen and paid for 1 unit
+2021-10-26 17:09:28,938 - __main__ - INFO - New bulk discount on TSHIRT items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 17:10:15,422 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 17:10:15,422 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 17:10:15,422 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 17:10:15,422 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 17:10:15,422 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:22:44,289 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:22:44,289 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:22:44,289 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:22:44,289 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:22:44,289 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:22:44,289 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:22:44,289 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 21:22:44,289 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 21:34:35,958 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:34:35,958 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:34:35,958 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:34:35,958 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:34:35,958 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:34:35,958 - __main__ - INFO - Scanning a 'VOUCHER' unit
+2021-10-26 21:34:35,958 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:34:35,958 - __main__ - ERROR - The product is not registered in the catalog
+2021-10-26 21:35:16,239 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:35:16,239 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:35:16,239 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:35:16,239 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:35:16,239 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:35:16,239 - __main__ - INFO - Scanning a 'VOUCHER' unit
+2021-10-26 21:35:16,239 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:35:16,239 - __main__ - INFO - Scanning a 'TSHIRT' unit
+2021-10-26 21:35:16,239 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 21:35:16,239 - __main__ - INFO - Scanning a 'PANTS' unit
+2021-10-26 21:35:16,239 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 21:37:28,155 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:37:28,155 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:37:28,156 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:37:28,156 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:37:28,156 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:37:28,156 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:37:28,156 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 21:37:28,156 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 21:37:55,909 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:37:55,909 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:37:55,909 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:37:55,909 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:37:55,909 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:37:55,909 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:37:55,909 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 21:37:55,909 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 21:37:55,909 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 21:40:21,640 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:40:21,641 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:40:21,641 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:40:21,641 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:40:21,641 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:40:21,641 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:40:21,641 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 21:40:21,641 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 21:40:21,641 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 21:41:05,413 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:41:05,413 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:41:05,413 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:41:05,413 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:41:05,414 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:41:05,414 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:41:05,414 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 21:41:05,414 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 21:41:05,414 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 21:41:21,057 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:41:21,057 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:41:21,057 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:41:21,057 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:41:21,057 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:41:21,057 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:41:21,057 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 21:41:21,057 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 21:41:21,057 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 21:41:21,057 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 21:41:38,211 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:41:38,211 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:41:38,211 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:41:38,211 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:41:38,211 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:41:38,211 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:41:38,211 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 21:41:38,211 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 21:41:38,211 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 21:41:38,211 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 21:41:47,297 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 21:41:47,298 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 21:41:47,298 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 21:41:47,298 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 21:41:47,298 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 21:41:47,298 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 21:41:47,298 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 21:41:47,298 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 21:41:47,298 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 21:41:47,298 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 22:01:21,802 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 22:01:21,802 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 22:01:21,802 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 22:01:21,802 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 22:01:21,802 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 22:01:21,802 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 22:01:21,802 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 22:01:21,802 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 22:01:21,802 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 22:01:21,802 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 23:47:51,423 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 23:47:51,423 - __main__ - INFO - ******************************************
+2021-10-26 23:47:51,423 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 23:47:51,423 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:47:51,423 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 23:47:51,423 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-26 23:47:51,423 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:47:51,424 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:47:51,424 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 23:47:51,424 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 23:47:51,424 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 23:49:00,808 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 23:49:00,808 - __main__ - INFO - ******************************************
+2021-10-26 23:49:00,808 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 23:49:00,809 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:49:00,809 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:49:00,809 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:49:00,809 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 23:49:00,809 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 23:49:00,809 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 23:49:00,809 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-26 23:49:00,809 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1.5}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 23:49:00,809 - __main__ - INFO - Total price: 35.0
+2021-10-26 23:52:44,316 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 23:52:44,317 - __main__ - INFO - ******************************************
+2021-10-26 23:52:44,317 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 23:52:44,317 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:52:44,317 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:52:44,317 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:52:44,317 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 23:52:44,317 - __main__ - ERROR - Error scanning a 'SHOES' unit because the product is not registered in the catalog
+2021-10-26 23:52:44,317 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-26 23:52:44,317 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 23:52:44,317 - __main__ - INFO - Total price: 32.5
+2021-10-26 23:53:23,442 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 23:53:23,443 - __main__ - INFO - ******************************************
+2021-10-26 23:53:23,443 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 23:53:23,443 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:53:23,443 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:53:23,443 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:53:23,443 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:53:23,443 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-26 23:53:23,443 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:53:23,443 - __main__ - INFO - Total price: 30.0
+2021-10-26 23:53:44,393 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 23:53:44,393 - __main__ - INFO - ******************************************
+2021-10-26 23:53:44,393 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 23:53:44,393 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:53:44,393 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:53:44,393 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:53:44,393 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:53:44,393 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 23:53:44,393 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-26 23:53:44,393 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:53:44,393 - __main__ - INFO - Total price: 25.0
+2021-10-26 23:54:15,779 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 23:54:15,779 - __main__ - INFO - ******************************************
+2021-10-26 23:54:15,779 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 23:54:15,779 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:54:15,780 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:54:15,780 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:54:15,780 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:54:15,780 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:54:15,780 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:54:15,780 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 23:54:15,780 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:54:15,780 - __main__ - INFO - Total price: 81.0
+2021-10-26 23:55:22,291 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 23:55:22,291 - __main__ - INFO - ******************************************
+2021-10-26 23:55:22,291 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 23:55:22,291 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:55:22,291 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:55:22,291 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:55:22,291 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:55:22,291 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:55:22,291 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 23:55:22,291 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:55:22,291 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:55:22,291 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 23:55:22,292 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 23:55:22,292 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3.5}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 23:55:22,292 - __main__ - INFO - Total price: 82.0
+2021-10-26 23:56:47,185 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 23:56:47,185 - __main__ - INFO - ******************************************
+2021-10-26 23:56:47,185 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 23:56:47,185 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:56:47,185 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:56:47,185 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:56:47,185 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:56:47,185 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:56:47,185 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 23:56:47,186 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:56:47,186 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:56:47,186 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 23:56:47,186 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 23:56:47,186 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3.5}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 23:56:47,186 - __main__ - INFO - Total price: 82.0
+2021-10-26 23:56:57,693 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-26 23:56:57,694 - __main__ - INFO - ******************************************
+2021-10-26 23:56:57,694 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-26 23:56:57,694 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-26 23:56:57,694 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:56:57,694 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:56:57,694 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:56:57,694 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-26 23:56:57,694 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-26 23:56:57,694 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:56:57,694 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-26 23:56:57,694 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-26 23:56:57,694 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-26 23:56:57,694 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3.5}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-26 23:56:57,694 - __main__ - INFO - Total price: 82.0
+2021-10-27 00:00:37,012 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 00:00:37,012 - __main__ - INFO - ******************************************
+2021-10-27 00:00:37,013 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 00:00:37,013 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 00:00:37,013 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:00:37,013 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:00:37,013 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:00:37,013 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:00:37,013 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 00:00:37,013 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:00:37,013 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:00:37,013 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-27 00:00:37,013 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 00:00:37,013 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3.5}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 00:00:37,013 - __main__ - INFO - Total price: 82.0
+2021-10-27 00:01:11,488 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 00:01:11,488 - __main__ - INFO - ******************************************
+2021-10-27 00:01:11,488 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 00:01:11,489 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 00:01:11,489 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:01:11,489 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:01:11,489 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:01:11,489 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:01:11,489 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 00:01:11,489 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:01:11,489 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:01:11,489 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-27 00:01:11,489 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 00:01:11,489 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 00:01:11,489 - __main__ - INFO - Total price: 74.5
+2021-10-27 00:02:07,231 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 00:02:07,231 - __main__ - INFO - ******************************************
+2021-10-27 00:02:07,231 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 00:02:07,232 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 00:02:07,232 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:02:07,232 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:02:07,232 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:02:07,232 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:02:07,232 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 00:02:07,232 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:02:07,232 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:02:07,232 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:02:07,232 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-27 00:02:07,232 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 00:02:07,232 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 00:02:07,232 - __main__ - INFO - Total price: 74.5
+2021-10-27 00:02:41,218 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 00:02:41,218 - __main__ - INFO - ******************************************
+2021-10-27 00:02:41,218 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 00:02:41,218 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 00:02:41,218 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:02:41,218 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:02:41,218 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:02:41,219 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:02:41,219 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 00:02:41,219 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:02:41,219 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:02:41,219 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:02:41,219 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:02:41,219 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-27 00:02:41,219 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 00:02:41,219 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 00:02:41,219 - __main__ - INFO - Total price: 79.5
+2021-10-27 00:03:42,650 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 00:03:42,651 - __main__ - INFO - ******************************************
+2021-10-27 00:03:42,651 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 00:03:42,651 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 00:03:42,651 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:03:42,651 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:03:42,651 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:03:42,651 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:03:42,651 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 00:03:42,651 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:03:42,651 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:03:42,651 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:03:42,651 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:03:42,651 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 5}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 00:03:42,651 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-27 00:03:42,651 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 00:03:42,651 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 00:03:42,651 - __main__ - INFO - Total price: 79.5
+2021-10-27 00:04:00,971 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 00:04:00,971 - __main__ - INFO - ******************************************
+2021-10-27 00:04:00,971 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 00:04:00,971 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 00:04:00,972 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 7}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 00:04:00,972 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-27 00:04:00,972 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 00:04:00,972 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 4.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 00:04:00,972 - __main__ - INFO - Total price: 84.5
+2021-10-27 10:11:58,130 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:11:58,131 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:11:58,131 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:11:58,131 - __main__ - INFO - ********************* Test 1 *********************
+2021-10-27 10:11:58,131 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:11:58,131 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:11:58,131 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:11:58,131 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:11:58,131 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-27 10:11:58,131 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:11:58,131 - __main__ - INFO - Total price: 32.5
+2021-10-27 10:47:16,317 - __main__ - INFO - **************************************************
+2021-10-27 10:47:16,318 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:47:16,318 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:47:16,318 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:47:16,318 - __main__ - INFO - ********************* Test 1 *********************
+2021-10-27 10:47:16,318 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:47:16,318 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:47:16,318 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:47:16,318 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:47:16,318 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-27 10:47:16,318 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:47:16,318 - __main__ - INFO - Total price: 32.5
+2021-10-27 10:49:10,567 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:49:10,567 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:49:10,567 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:49:10,567 - __main__ - INFO - ********************* TEST 1
+2021-10-27 10:49:10,567 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:49:10,567 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:49:10,567 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:49:10,567 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:49:10,567 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-27 10:49:10,567 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:49:10,567 - __main__ - INFO - Total price: 32.5
+2021-10-27 10:49:40,116 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:49:40,116 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:49:40,116 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:49:40,116 - __main__ - INFO - ********************* TEST 2
+2021-10-27 10:49:40,116 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:49:40,116 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:49:40,116 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:49:40,116 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:49:40,116 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-27 10:49:40,116 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-27 10:49:40,116 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:49:40,116 - __main__ - INFO - Total price: 25.0
+2021-10-27 10:49:51,690 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:49:51,690 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:49:51,690 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:49:51,690 - __main__ - INFO - ********************* TEST 3
+2021-10-27 10:49:51,690 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:49:51,690 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:49:51,691 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:49:51,691 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:49:51,691 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:49:51,691 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:49:51,691 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 10:49:51,691 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:49:51,691 - __main__ - INFO - Total price: 81.0
+2021-10-27 10:50:04,567 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:50:04,567 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:50:04,567 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:50:04,567 - __main__ - INFO - ********************* TEST 4
+2021-10-27 10:50:04,567 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:04,567 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:50:04,567 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:04,567 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:04,567 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:50:04,568 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:50:04,568 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:50:04,568 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:50:04,568 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-27 10:50:04,568 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 10:50:04,568 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:50:04,568 - __main__ - INFO - Total price: 74.5
+2021-10-27 10:50:16,072 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:50:16,072 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:50:16,072 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:50:16,072 - __main__ - INFO - ********************* TEST 5 (own test)
+2021-10-27 10:50:16,072 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:16,072 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:50:16,072 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:16,072 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:16,072 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:50:16,073 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:50:16,073 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:50:16,073 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:16,073 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:16,073 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:16,073 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:50:16,073 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 7}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:50:16,073 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit
+2021-10-27 10:50:16,073 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 10:50:16,073 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 4.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:50:16,073 - __main__ - INFO - Total price: 84.5
+2021-10-27 10:51:09,512 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:51:09,512 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:51:09,512 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:51:09,512 - __main__ - INFO - ********************* TEST 5 (own test)
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:51:09,513 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 7}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:51:09,513 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+2021-10-27 10:51:09,513 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 10:51:09,513 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 4.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 10:51:09,513 - __main__ - INFO - Total price: 84.5
+2021-10-27 10:55:26,723 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:55:26,723 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:55:26,723 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:55:26,723 - __main__ - INFO - ********************* TEST 6 (own test for 3x1 in PANTS items)
+2021-10-27 10:55:26,723 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:55:26,723 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:55:26,723 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:55:26,723 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:55:26,723 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:55:26,723 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:55:26,723 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:55:26,724 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:55:26,724 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:55:26,724 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:55:26,724 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 10:55:26,724 - __main__ - INFO - New group discount on 'PANTS' items with 3 units chosen and paid for 1 unit (3x1)
+2021-10-27 10:55:26,724 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 10:55:26,724 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 2.0}]
+2021-10-27 10:55:26,724 - __main__ - INFO - Total price: 87.0
+2021-10-27 10:57:25,450 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 10:57:25,451 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 10:57:25,451 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 10:57:25,451 - __main__ - INFO - ********************* TEST 7 (own test for 4x1 in PANTS items)
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 10:57:25,451 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 10:57:25,451 - __main__ - INFO - New group discount on 'PANTS' items with 4 units chosen and paid for 1 unit (4x1)
+2021-10-27 10:57:25,451 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 10:57:25,451 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1.0}]
+2021-10-27 10:57:25,451 - __main__ - INFO - Total price: 79.5
+2021-10-27 16:32:36,630 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:32:36,630 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:32:36,630 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:32:36,630 - __main__ - INFO - ********************* TEST 4
+2021-10-27 16:32:36,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:32:36,630 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:32:36,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:32:36,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:32:36,630 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:32:36,630 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:32:36,630 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:32:36,630 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:32:36,630 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:32:36,630 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:32:36,630 - __main__ - INFO - Total price: 79.5
+2021-10-27 16:33:02,151 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:33:02,152 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:33:02,152 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:33:02,152 - __main__ - INFO - ********************* TEST 4
+2021-10-27 16:33:02,152 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:33:02,152 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:33:02,152 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:33:02,152 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:33:02,152 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:33:02,152 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:33:02,152 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:33:02,152 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:33:02,152 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+2021-10-27 16:33:02,152 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:33:02,152 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:33:02,152 - __main__ - INFO - Total price: 74.5
+2021-10-27 16:34:48,179 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:34:48,180 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:34:48,180 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:34:48,180 - __main__ - INFO - ********************* TEST 4
+2021-10-27 16:34:48,180 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:34:48,180 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:34:48,180 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:34:48,180 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:34:48,180 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:34:48,180 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:34:48,180 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:34:48,180 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:34:48,180 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+2021-10-27 16:34:48,180 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:34:48,180 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:34:48,180 - __main__ - INFO - Total price: 74.5
+2021-10-27 16:35:06,017 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:35:06,017 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:35:06,017 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:35:06,017 - __main__ - INFO - ********************* TEST 3
+2021-10-27 16:35:06,017 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:06,017 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:06,017 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:06,017 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:06,017 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:06,017 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:35:06,017 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:35:06,017 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:35:06,017 - __main__ - INFO - Total price: 81.0
+2021-10-27 16:35:18,715 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:35:18,715 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:35:18,715 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:35:18,715 - __main__ - INFO - ********************* TEST 5 (own test for 2x1 in VOUCHER items)
+2021-10-27 16:35:18,715 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:18,715 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:18,716 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 7}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:35:18,716 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+2021-10-27 16:35:18,716 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:35:18,716 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 4.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:35:18,716 - __main__ - INFO - Total price: 84.5
+2021-10-27 16:35:36,868 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:35:36,869 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:35:36,869 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:35:36,869 - __main__ - INFO - ********************* TEST 4
+2021-10-27 16:35:36,869 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:36,869 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:36,869 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:36,869 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:36,869 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:35:36,869 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:36,869 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:36,869 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:35:36,869 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+2021-10-27 16:35:36,869 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:35:36,869 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:35:36,869 - __main__ - INFO - Total price: 74.5
+2021-10-27 16:35:51,658 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:35:51,658 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:35:51,658 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:35:51,658 - __main__ - INFO - ********************* TEST 6 (own test for 3x1 in PANTS items)
+2021-10-27 16:35:51,658 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:51,658 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:51,658 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:51,658 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:35:51,658 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:35:51,658 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:51,658 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:35:51,658 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:35:51,658 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:35:51,659 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:35:51,659 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 16:35:51,659 - __main__ - INFO - New group discount on 'VOUCHER' items with 3 units chosen and paid for 1 unit (3x1)
+2021-10-27 16:35:51,659 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:35:51,659 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 16:35:51,659 - __main__ - INFO - Total price: 92.0
+2021-10-27 16:36:05,761 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:36:05,762 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:36:05,762 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:36:05,762 - __main__ - INFO - ********************* TEST 6 (own test for 3x1 in PANTS items)
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:36:05,762 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 16:36:05,762 - __main__ - INFO - New group discount on 'PANTS' items with 3 units chosen and paid for 1 unit (3x1)
+2021-10-27 16:36:05,762 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:36:05,762 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 2.0}]
+2021-10-27 16:36:05,762 - __main__ - INFO - Total price: 87.0
+2021-10-27 16:37:50,878 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:37:50,878 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:37:50,878 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:37:50,878 - __main__ - INFO - ********************* TEST 6 (own test for 3x1 in PANTS items)
+2021-10-27 16:37:50,878 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:37:50,878 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:37:50,878 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:37:50,878 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:37:50,878 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:37:50,878 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:37:50,879 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:37:50,879 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:37:50,879 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:37:50,879 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:37:50,879 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 16:37:50,879 - __main__ - INFO - New group discount on 'PANTS' items with 3 units chosen and paid for 1 unit (3x1)
+2021-10-27 16:37:50,879 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:37:50,879 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 2.0}]
+2021-10-27 16:37:50,879 - __main__ - INFO - Total price: 87.0
+2021-10-27 16:38:17,620 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:38:17,620 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:38:17,620 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:38:17,620 - __main__ - INFO - ********************* TEST 7 (own test for 4x1 in PANTS items)
+2021-10-27 16:38:17,620 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:38:17,620 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:38:17,621 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:38:17,621 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:38:17,621 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:38:17,621 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:38:17,621 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:38:17,621 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:38:17,621 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:38:17,621 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:38:17,621 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 16:38:17,621 - __main__ - INFO - New group discount on 'PANTS' items with 4 units chosen and paid for 1 unit (4x1)
+2021-10-27 16:38:17,621 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:38:17,621 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1.0}]
+2021-10-27 16:38:17,621 - __main__ - INFO - Total price: 79.5
+2021-10-27 16:38:39,586 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:38:39,586 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:38:39,586 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:38:39,586 - __main__ - INFO - ********************* TEST 1
+2021-10-27 16:38:39,586 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:38:39,586 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:38:39,586 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:38:39,586 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:38:39,586 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-27 16:38:39,586 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:38:39,586 - __main__ - INFO - Total price: 32.5
+2021-10-27 16:38:58,767 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:38:58,767 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:38:58,767 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:38:58,767 - __main__ - INFO - ********************* TEST 2
+2021-10-27 16:38:58,767 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:38:58,767 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:38:58,767 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:38:58,767 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:38:58,767 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+2021-10-27 16:38:58,767 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-27 16:38:58,767 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:38:58,768 - __main__ - INFO - Total price: 25.0
+2021-10-27 16:39:17,498 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:39:17,499 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:39:17,499 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:39:17,499 - __main__ - INFO - ********************* TEST 3
+2021-10-27 16:39:17,499 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:39:17,499 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:39:17,499 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:39:17,499 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:39:17,499 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:39:17,499 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:39:17,499 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:39:17,499 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:39:17,499 - __main__ - INFO - Total price: 81.0
+2021-10-27 16:39:44,069 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:39:44,069 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:39:44,069 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:39:44,069 - __main__ - INFO - ********************* TEST 3
+2021-10-27 16:39:44,070 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:39:44,070 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:39:44,070 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:39:44,070 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:39:44,070 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:39:44,070 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:39:44,070 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:39:44,070 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:39:44,070 - __main__ - INFO - Total price: 81.0
+2021-10-27 16:41:33,382 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:41:33,382 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:41:33,382 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:41:33,382 - __main__ - INFO - ********************* TEST 1
+2021-10-27 16:41:33,382 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:41:33,382 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:41:33,382 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:41:33,382 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:41:33,382 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-27 16:41:33,382 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:41:33,382 - __main__ - INFO - Total price: 32.5
+2021-10-27 16:42:45,794 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:42:45,795 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:42:45,795 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:42:45,795 - __main__ - INFO - ********************* TEST 1
+2021-10-27 16:42:45,796 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:42:45,796 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:42:45,796 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:42:45,796 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:43:28,865 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:43:28,865 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:43:28,865 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:43:28,865 - __main__ - INFO - ********************* TEST 1
+2021-10-27 16:43:28,865 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:43:28,865 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:43:28,865 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:43:28,865 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:43:28,865 - __main__ - INFO - Not exist 'TSHIRT' product in cart
+2021-10-27 16:43:28,866 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:43:28,866 - __main__ - INFO - Total price: 32.5
+2021-10-27 16:44:23,161 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:44:23,161 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:44:23,161 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:44:23,161 - __main__ - INFO - ********************* TEST 1
+2021-10-27 16:44:23,161 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:44:23,161 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:44:23,161 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:44:23,161 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:44:23,161 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:44:23,161 - __main__ - INFO - Total price: 32.5
+2021-10-27 16:44:42,098 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:44:42,099 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:44:42,099 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:44:42,099 - __main__ - INFO - ********************* TEST 1
+2021-10-27 16:44:42,099 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:44:42,099 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:44:42,099 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:44:42,099 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:44:42,099 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:44:42,099 - __main__ - INFO - Total price: 32.5
+2021-10-27 16:45:46,516 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:45:46,517 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:45:46,517 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:45:46,517 - __main__ - INFO - ********************* TEST 1
+2021-10-27 16:45:46,517 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:45:46,517 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:45:46,517 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:45:46,517 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:45:46,517 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:45:46,517 - __main__ - INFO - Total price: 32.5
+2021-10-27 16:46:40,753 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:46:40,753 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:46:40,753 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:46:40,753 - __main__ - INFO - ********************* TEST 1
+2021-10-27 16:46:40,753 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:46:40,753 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:46:40,753 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:46:40,754 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:46:40,754 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:46:40,754 - __main__ - INFO - Total price: 32.5
+2021-10-27 16:47:05,583 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:47:05,583 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:47:05,583 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:47:05,583 - __main__ - INFO - ********************* TEST 2
+2021-10-27 16:47:05,583 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:47:05,583 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:47:05,583 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:47:05,583 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:47:05,583 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+2021-10-27 16:47:05,583 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 1}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:47:05,583 - __main__ - INFO - Total price: 25.0
+2021-10-27 16:48:13,909 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:48:13,910 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:48:13,910 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:48:13,910 - __main__ - INFO - ********************* TEST 3
+2021-10-27 16:48:13,910 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:13,910 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:13,911 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:13,911 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:48:13,911 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:13,911 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:48:13,911 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:48:13,911 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:48:13,911 - __main__ - INFO - Total price: 81.0
+2021-10-27 16:48:16,689 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:48:16,689 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:48:16,689 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:48:16,689 - __main__ - INFO - ********************* TEST 3
+2021-10-27 16:48:16,689 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:16,689 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:16,689 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:16,689 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:48:16,689 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:16,689 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:48:16,689 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:48:16,690 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 4}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:48:16,690 - __main__ - INFO - Total price: 81.0
+2021-10-27 16:48:37,176 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:48:37,176 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:48:37,176 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:48:37,176 - __main__ - INFO - ********************* TEST 4
+2021-10-27 16:48:37,176 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:48:37,176 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:37,177 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:48:37,177 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:48:37,177 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:48:37,177 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:37,177 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:48:37,177 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:48:37,177 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+2021-10-27 16:48:37,177 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:48:37,177 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:48:37,177 - __main__ - INFO - Total price: 74.5
+2021-10-27 16:49:30,629 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:49:30,629 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:49:30,630 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:49:30,630 - __main__ - INFO - ********************* TEST 5 (own test for 2x1 in VOUCHER items)
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:49:30,630 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 7}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:49:30,630 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+2021-10-27 16:49:30,630 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:49:30,630 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 4.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+2021-10-27 16:49:30,630 - __main__ - INFO - Total price: 84.5
+2021-10-27 16:50:13,985 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:50:13,985 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:50:13,985 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:50:13,985 - __main__ - INFO - ********************* TEST 6 (own test for 3x1 in PANTS items)
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:50:13,985 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 16:50:13,985 - __main__ - INFO - New group discount on 'PANTS' items with 3 units chosen and paid for 1 unit (3x1)
+2021-10-27 16:50:13,985 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:50:13,985 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 2.0}]
+2021-10-27 16:50:13,985 - __main__ - INFO - Total price: 87.0
+2021-10-27 16:51:04,841 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 16:51:04,842 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 16:51:04,842 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 16:51:04,842 - __main__ - INFO - ********************* TEST 7 (own test for 4x1 in PANTS items)
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 16:51:04,842 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 16:51:04,842 - __main__ - INFO - New group discount on 'PANTS' items with 4 units chosen and paid for 1 unit (4x1)
+2021-10-27 16:51:04,842 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-27 16:51:04,842 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1.0}]
+2021-10-27 16:51:04,842 - __main__ - INFO - Total price: 79.5
+2021-10-27 17:02:28,973 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 17:02:28,974 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 17:02:28,974 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 17:02:28,974 - __main__ - INFO - ********************* TEST 8 (error case with 2x1 in SHOES items)
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:02:28,974 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 17:02:28,974 - __main__ - INFO - New group discount on 'PANTS' items with 4 units chosen and paid for 1 unit (4x1)
+2021-10-27 17:02:28,974 - __main__ - INFO - New bulk discount on 'VOUCHER' items with 2 units chosen or more and the price per unit be 4.0
+2021-10-27 17:02:28,974 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 4.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1.0}]
+2021-10-27 17:02:28,974 - __main__ - INFO - Total price: 79.5
+2021-10-27 17:02:50,550 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 17:02:50,551 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 17:02:50,551 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 17:02:50,551 - __main__ - INFO - ********************* TEST 8 (error case with 2x1 in SHOES items)
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:02:50,551 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 17:02:50,551 - __main__ - INFO - Not exist 'SHOES' product in cart
+2021-10-27 17:02:50,551 - __main__ - INFO - New bulk discount on 'VOUCHER' items with 2 units chosen or more and the price per unit be 4.0
+2021-10-27 17:02:50,551 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 4.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 17:02:50,551 - __main__ - INFO - Total price: 102.0
+2021-10-27 17:04:52,146 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 17:04:52,146 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 17:04:52,147 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 17:04:52,147 - __main__ - INFO - ********************* TEST 8 (error case with 2x1 in SHOES items because not got SHOES items)
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:04:52,147 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 17:04:52,147 - __main__ - INFO - Not exist 'SHOES' product in cart
+2021-10-27 17:04:52,147 - __main__ - INFO - New bulk discount on 'VOUCHER' items with 2 units chosen or more and the price per unit be 4.0
+2021-10-27 17:04:52,147 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 4.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 17:04:52,148 - __main__ - INFO - Total price: 102.0
+2021-10-27 17:09:58,159 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-27 17:09:58,159 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-27 17:09:58,159 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+2021-10-27 17:09:58,159 - __main__ - INFO - ********************* TEST 9 (error case with 2x1 in SHOES items because not got SHOES items)
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Scanned a 'PANTS' unit
+2021-10-27 17:09:58,159 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 4}]
+2021-10-27 17:09:58,159 - __main__ - INFO - Not exist 'SHOES' product in cart
+2021-10-27 17:09:58,159 - __main__ - INFO - New bulk discount on 'VOUCHER' items with 2 units chosen or more and the price per unit be 4.0
+2021-10-27 17:09:58,159 - __main__ - INFO - New group discount on 'PANTS' items with 4 units chosen and paid for 1 unit (4x1)
+2021-10-27 17:09:58,159 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 4.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1.0}]
+2021-10-27 17:09:58,159 - __main__ - INFO - Total price: 79.5
