@@ -8,8 +8,7 @@ logger = logger_configurator.get_logger(__name__)
 
 
 def total(products):
-    """
-    This function calculates the total price to products cart
+    """This function calculates the total price of the products cart
     :param products: products cart
     """
 
@@ -157,17 +156,26 @@ def catalog_check(dict_catalog):
         logger.error("The json file is empty")
         sys.exit(const.EXIT_CODE_UNSTABLE)
 
-    # Or is not empty see the lengths for values
+    # Or if is not empty check the lengths, price value and if it is the correct columns
     else:
 
         # check values length
-        for value in dict_catalog.values():
+        for key, value in dict_catalog.items():
+
+            # if exists negative prices returns error
+            if key == const.PRODUCTS_PRICE:
+                for v in value:
+                    if v < 0:
+                        logger.error("The json file is not correct by negative values")
+                        sys.exit(const.EXIT_CODE_BAD)
+
+            # if exists values with different size returns error
             len_value = len(value)
             if len_aux == 0:
                 len_aux = len_value
             else:
                 if len_aux != len_value:
-                    logger.info("The json file is not correct by lengths for values")
+                    logger.error("The json file is not correct by lengths for values")
                     sys.exit(const.EXIT_CODE_BAD)
 
         # check existing keys at this moment
