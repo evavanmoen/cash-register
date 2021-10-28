@@ -53,7 +53,7 @@ def bulk_discount(code, units, price, products):
     """
 
     # If the code is existing and the unit and price are positive values
-    if len(code) > 0 and units > 0 and price > 0.0:
+    if len(code) > 0 and units > 0 and price > 0.0 and type(units) == int:
 
         exist = False
 
@@ -72,7 +72,10 @@ def bulk_discount(code, units, price, products):
                     break
 
         if not exist:
-            logger.info("Not exist '{}' product in cart".format(code, units, price))
+            logger.info("Bulk discount not applied: not exist '{}' product in cart".format(code, units, price))
+
+    else:
+        logger.info("Bulk discount not applied: invalid parameters")
 
 
 def group_discount(code, units_ini, units_fin, products):
@@ -85,7 +88,7 @@ def group_discount(code, units_ini, units_fin, products):
     """
 
     # If the code is existing and the units are positive values
-    if len(code) > 0 and units_ini > 0 and units_fin > 0:
+    if len(code) > 0 and units_ini > 0 and units_fin > 0 and type(units_ini) == int:
 
         exist = False
 
@@ -117,7 +120,10 @@ def group_discount(code, units_ini, units_fin, products):
                     break
 
         if not exist:
-            logger.info("Not exist '{}' product in cart".format(code, units_ini, units_fin))
+            logger.info("Group discount not applied: not exist '{}' product in cart".format(code, units_ini, units_fin))
+
+    else:
+        logger.info("Group discount not applied: invalid parameters")
 
 
 def convert_products(dict_catalog):
