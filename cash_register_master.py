@@ -220,7 +220,7 @@ def main():
     logger.info("Catalog: {}".format(catalog))
     logger.info("Products: {}".format(products))
 
-    # EXERCISE CASE 1 (● Items: VOUCHER, TSHIRT, PANTS - Total: 32.50€)
+    # CASE 1 (Items: VOUCHER, TSHIRT, PANTS - Total: 32.50€)
     # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
     """
     logger.info("********************* TEST 1")
@@ -232,7 +232,7 @@ def main():
     group_discount("VOUCHER", 2, 1, products)
     bulk_discount("TSHIRT", 3, 19.00, products)"""
 
-    # EXERCISE CASE 2 (● Items: VOUCHER, TSHIRT, VOUCHER - Total: 25.00€)
+    # CASE 2 (Items: VOUCHER, TSHIRT, VOUCHER - Total: 25.00€)
     # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
     """
     logger.info("********************* TEST 2")
@@ -244,7 +244,7 @@ def main():
     group_discount("VOUCHER", 2, 1, products)
     bulk_discount("TSHIRT", 3, 19.00, products)"""
 
-    # EXERCISE CASE 3 (● Items: TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT - Total: 81.00€)
+    # CASE 3 (Items: TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT - Total: 81.00€)
     # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
     """
     logger.info("********************* TEST 3")
@@ -258,7 +258,7 @@ def main():
     group_discount("VOUCHER", 2, 1, products)
     bulk_discount("TSHIRT", 3, 19.00, products)"""
 
-    # EXERCISE CASE 4 (● Items: VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT - Total: 74.50€)
+    # CASE 4 (Items: VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT - Total: 74.50€)
     # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
     logger.info("********************* TEST 4")
     scan("VOUCHER", products)
@@ -273,7 +273,7 @@ def main():
     group_discount("VOUCHER", 2, 1, products)
     bulk_discount("TSHIRT", 3, 19.00, products)
 
-    # OWN CASE (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, VOUCHER, VOUCHER, VOUCHER, VOUCHER: 84.50€)
+    # CASE 5 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, VOUCHER, VOUCHER, VOUCHER, VOUCHER: 84.50€)
     # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
     """
     logger.info("********************* TEST 5 (own test for 2x1 in VOUCHER items but got more VOUCHER items)")
@@ -293,7 +293,7 @@ def main():
     group_discount("VOUCHER", 2, 1, products)
     bulk_discount("TSHIRT", 3, 19.00, products)"""
 
-    # OWN CASE (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 87€)
+    # CASE 6 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 87€)
     # (with 3x1 in PANTS items and 3 or more TSHIRT items the price per unit should be 19.00)
     """
     logger.info("********************* TEST 6 (own test for 3x1 in PANTS items)")
@@ -312,7 +312,7 @@ def main():
     group_discount("PANTS", 3, 1, products)
     bulk_discount("TSHIRT", 3, 19.00, products)"""
 
-    # OWN CASE (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 79.50€)
+    # CASE 7 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 79.50€)
     # (with 4x1 in PANTS items and 3 or more TSHIRT items the price per unit should be 19.00)
     """
     logger.info("********************* TEST 7 (own test for 4x1 in PANTS items)")
@@ -331,7 +331,7 @@ def main():
     group_discount("PANTS", 4, 1, products)
     bulk_discount("TSHIRT", 3, 19.00, products)"""
 
-    # Error discount (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 102€)
+    # CASE 8 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 102€)
     # (with 2x1 in SHOES items and 2 or more VOUCHER items the price per unit should be 4.00)
     """
     logger.info("********************* TEST 8 (error case with 2x1 in SHOES items because not got SHOES items)")
@@ -350,7 +350,7 @@ def main():
     group_discount("SHOES", 2, 1, products)
     bulk_discount("VOUCHER", 2, 4.00, products)"""
 
-    # Error discount (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 79.5€)
+    # CASE 9 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 79.5€)
     # (with 2x1 in SHOES items and 2 or more VOUCHER items the price per unit should be 4.00 and 4x1 in PANTS items)
     """
     logger.info("********************* TEST 9 (error case with 2x1 in SHOES items because not got SHOES items)")
