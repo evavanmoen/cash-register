@@ -15,12 +15,12 @@ def total(products):
     :param products: products cart
     """
 
-    total_price = 0
+    final_price = 0
 
     for product in products:
-        total_price += product[const.PRODUCTS_UNITS] * product[const.PRODUCTS_PRICE]
+        final_price += product[const.PRODUCTS_TOTAL_PRICE]
 
-    return total_price
+    return final_price
 
 
 def scan(code, products):
@@ -32,9 +32,10 @@ def scan(code, products):
     exist = False
 
     # Add a unit to the product corresponding to the given code
-    for p in products:
-        if p[const.PRODUCTS_CODE] == code:
-            p[const.PRODUCTS_UNITS] = p[const.PRODUCTS_UNITS] + 1
+    for product in products:
+        if product[const.PRODUCTS_CODE] == code:
+            product[const.PRODUCTS_UNITS] = product[const.PRODUCTS_UNITS] + 1
+            product[const.PRODUCTS_TOTAL_PRICE] = product[const.PRODUCTS_UNITS] * product[const.PRODUCTS_PRICE]
             exist = True
             logger.info("Scanned a '{}' unit".format(code))
 
@@ -65,6 +66,7 @@ def bulk_discount(code, units, price, products):
 
                 if product[const.PRODUCTS_UNITS] >= units:
                     product[const.PRODUCTS_PRICE] = price
+                    product[const.PRODUCTS_TOTAL_PRICE] = product[const.PRODUCTS_UNITS] * product[const.PRODUCTS_PRICE]
                     logger.info(
                         "New bulk discount on '{}' items with {} units chosen or more and the price per unit be {}".
                         format(code, units, price))
@@ -114,6 +116,8 @@ def group_discount(code, units_ini, units_fin, products):
                             units -= 1
                             product[const.PRODUCTS_UNITS] = (units / units_ini) + 1
 
+                        product[const.PRODUCTS_TOTAL_PRICE] = \
+                            product[const.PRODUCTS_UNITS] * product[const.PRODUCTS_PRICE]
                         logger.info("New group discount on '{0}' items with {1} units chosen and paid for {2} unit "
                                     "({1}x{2})".format(code, units_ini, units_fin))
                 else:
@@ -144,7 +148,8 @@ def convert_products(dict_catalog):
             const.PRODUCTS_CODE: dict_catalog[const.PRODUCTS_CODE][i],
             const.PRODUCTS_NAME: dict_catalog[const.PRODUCTS_NAME][i],
             const.PRODUCTS_PRICE: dict_catalog[const.PRODUCTS_PRICE][i],
-            const.PRODUCTS_UNITS: 0
+            const.PRODUCTS_UNITS: 0,
+            const.PRODUCTS_TOTAL_PRICE: 0
         }
 
         # added in final product list
@@ -377,7 +382,7 @@ def main():
     group_discount("PANTS", 4, 1, products)"""
 
     logger.info("Products: {}".format(products))
-    logger.info("Total price: {}".format(total(products)))
+    logger.info("Total cart price: {}".format(total(products)))
 
     sys.exit(const.EXIT_CODE_OK)
 

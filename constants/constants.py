@@ -17,6 +17,7 @@ PRODUCTS_CODE = "code"
 PRODUCTS_NAME = "name"
 PRODUCTS_PRICE = "price"
 PRODUCTS_UNITS = "units"
+PRODUCTS_TOTAL_PRICE = "total_price"
 PRODUCTS_COLUMNS = [PRODUCTS_CODE, PRODUCTS_NAME, PRODUCTS_PRICE]
 
 # ===============================================================================================
