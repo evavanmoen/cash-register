@@ -5,181 +5,274 @@
 ## Explicación:
 ### /cash-register
 El directorio principal consta de varios directorios y del fichero a ejecutar (_cash_register_master.py_).
-#### /constants
-Dentro el fichero constants.py donde figura todas las constantes a utilizar y el fichero init correspondiente.
-#### /input
-El fichero _cash_register.json_ consiste en el fichero json de configuración con la información de los \
+- #### /constants
+  Incluye el fichero _constants.py_ donde figuran todas las constantes a utilizar y el fichero init correspondiente.
+- #### /input
+  Incluye _cash_register.json_, que consiste en el fichero .json con la información de los \
 productos a tratar.
-#### /logger
-_logger_configurator.py_ utilizado para conseguir el tratamiento de los logs deseado. En este caso \
-necesitando ser vistos tanto en local como desde fichero (/logs/cash_register_debug.log).
-#### /logs
-_cash_register_debug.log_ recoge todos los logs de ejecución.
+- #### /logger
+  Incluye _logger_configurator.py_, utilizado para conseguir el tratamiento de los logs deseado. En este caso \
+necesitando ser vistos tanto en local como desde fichero (/logs/_cash_register_debug.log_).
+- #### /logs
+  Incluye _cash_register_debug.log_, el cual recoge los logs de ejecución de todas las pruebas realizadas.
 
-### cash_register_master.py
-Fichero principal y total de todo el proceso. Ejecutable para poder realizar las pruebas propias deseadas \
-aunque ya dispone de una función main con distintos casos de prueba pedidos y algunos propios realizados \
-pero que se encuentran comentados para dejar que se prueben de uno en uno. \
-En el fichero _cash_register_debug.log_ queda recogido todos los mensajes de salida de todas las pruebas realizadas. 
+### _cash_register_master.py_
+Fichero principal que contiene toda la lógica del proceso, que incluye las funciones necesarias para cumplir con las \
+especificaciones de este ejercicio. 
+- Función de lectura de configuración de .json `get_products()`
+- Función de escaneo de productos uno-a-uno `scan(code, products)`
+- Función de aplicación de promoción grupal `group_discount(code, units_ini, units_fin, products)`
+- Función de aplicación de promoción al por mayor `bulk_discount(code, units, price, products)`
+- Función de cálculo del coste total `total(products)`
+- Funciones auxiliares `catalog_check(dict_catalog)` y `convert_products(dict_catalog)`
+- Función `main()` con los casos de prueba requeridos y algunos otros adicionales que dejo comentados para que puedan \
+probarse de uno en uno. 
 
-Caso de prueba: 
+  ####Caso de prueba 
+  
+  ```tsx
+  def main():
+      catalog, products = get_products()
+  
+      logger.info("Catalog: {}".format(catalog))
+      logger.info("Products: {}".format(products))
+  
+      # ...
+  
+      # CASE 4 (Items: VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT - Total: 74.50€)
+      # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
+      logger.info("********************* TEST 4")
+      scan("VOUCHER", products)
+      scan("TSHIRT", products)
+      scan("VOUCHER", products)
+      scan("VOUCHER", products)
+      scan("PANTS", products)
+      scan("TSHIRT", products)
+      scan("TSHIRT", products)
+      
+      logger.info("Products: {}".format(products))
+      group_discount("VOUCHER", 2, 1, products)
+      bulk_discount("TSHIRT", 3, 19.00, products)
+  
+      # ...
+  
+      logger.info("Products: {}".format(products))
+      logger.info("Total price: {}".format(total(products)))
+  
+      sys.exit(const.EXIT_CODE_OK)
+  ```
 
-```tsx
-def main():
-    catalog, products = get_products()
+  Salida por la terminal de PyCharm:
+  ```tsx
+  /usr/bin/python3.6 /home/eva/PycharmProjects/cash-register/cash_register_master.py
+  Reading json file: input/cash_register.json
+  Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+  ********************* TEST 4
+  Scanned a 'VOUCHER' unit
+  Scanned a 'TSHIRT' unit
+  Scanned a 'VOUCHER' unit
+  Scanned a 'VOUCHER' unit
+  Scanned a 'PANTS' unit
+  Scanned a 'TSHIRT' unit
+  Scanned a 'TSHIRT' unit
+  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+  New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+  New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
+  Total price: 74.5
 
-    logger.info("Catalog: {}".format(catalog))
-    logger.info("Products: {}".format(products))
+  Process finished with exit code 0
+  ```
 
-    # EXERCISE CASE 4 (● Items: VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT - Total: 74.50€)
-    # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
-    logger.info("********************* TEST 4")
-    scan("VOUCHER", products)
-    scan("TSHIRT", products)
-    scan("VOUCHER", products)
-    scan("VOUCHER", products)
-    scan("PANTS", products)
-    scan("TSHIRT", products)
-    scan("TSHIRT", products)
-    
-    logger.info("Products: {}".format(products))
-    group_discount("VOUCHER", 2, 1, products)
-    bulk_discount("TSHIRT", 3, 19.00, products)
 
-    logger.info("Products: {}".format(products))
-    logger.info("Total price: {}".format(total(products)))
+### Funciones de _cash_register_master.py_
 
-    sys.exit(const.EXIT_CODE_OK)
-```
+A continuación se muestran los detalles de la lógica de cada función:
 
-Y su salida por terminal:
-```tsx
-/usr/bin/python3.6 /home/eva/PycharmProjects/cash-register/cash_register_master.py
-Reading json file: input/cash_register.json
-Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
-Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
-********************* TEST 4
-Scanned a 'VOUCHER' unit
-Scanned a 'TSHIRT' unit
-Scanned a 'VOUCHER' unit
-Scanned a 'VOUCHER' unit
-Scanned a 'PANTS' unit
-Scanned a 'TSHIRT' unit
-Scanned a 'TSHIRT' unit
-Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
-New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
-New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
-Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1}]
-Total price: 74.5
+- ###`main():` 
 
-Process finished with exit code 0
-```
+  Función prueba con los casos requeridos por la prueba: 
+  - CASE 1 (Items: VOUCHER, TSHIRT, PANTS - Total: 32.50€)
+  - CASE 2 (Items: VOUCHER, TSHIRT, VOUCHER - Total: 25.00€)
+  - CASE 3 (Items: TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT - Total: 81.00€)
+  - CASE 4 (Items: VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT - Total: 74.50€)
+  
+  Y algunos casos adicionales:
+  - CASE 5 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, VOUCHER, VOUCHER, VOUCHER, VOUCHER: 84.50€)
+  - CASE 6 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 87€)
+  - CASE 7 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 79.50€)
+  - CASE 8 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 102€)
+  - CASE 9 (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 79.5€)
+  
 
-#### `main():`
-Función main con la ejecución del proceso pedido con varios casos prueba: 
-- EXERCISE CASE 1 (● Items: VOUCHER, TSHIRT, PANTS - Total: 32.50€)
-- EXERCISE CASE 2 (● Items: VOUCHER, TSHIRT, VOUCHER - Total: 25.00€)
-- EXERCISE CASE 3 (● Items: TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT - Total: 81.00€)
-- EXERCISE CASE 4 (● Items: VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT - Total: 74.50€)
-- OWN CASE (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, VOUCHER, VOUCHER, VOUCHER, VOUCHER: 84.50€)
-- OWN CASE (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 87€)
-- OWN CASE (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 79.50€)
-- Error discount (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 102€)
-- Error discount (VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT, PANTS, PANTS, PANTS: 79.5€)
+- ### `get_products():`
+  Función encargada de la lectura del .json (_cash_register.json_) para obtener el catálogo de productos con los que \
+trataremos. Una vez recogido dicho catálogo en un diccionario (`dict_catalog`), comprobamos con la función \
+`catalog_check(dict_catalog)` si la información es válida. Por último, hacemos uso de la función \
+`convert_products(dict_catalog)` para convertir `dict_catalog` en una lista de diccionarios. Cada uno de esos \
+diccionarios contiene la información de un producto. \
+`get_products()` devuelve el diccionario del catálogo (`dict_catalog`) y la lista de productos (`list_products`). \
+A continuación se muestra lo que sería un print en la salida de _cash_register_debug.log_:
 
-#### `catalog_check(dict_catalog):`
-Esta función comprueba que la información recogida del json sea correcta y para ello miramos que tratemos con el \
-mismo número de valores por clave (es decir, que si recibimos tres código de producto también tengamos tres precios), \
-que las claves sean las esperadas (`code`, `name`, `price`) y por último que los precios sean valores positivos. \
-Devuelve un mensaje de error o nada si todo se encuentra como debería.
+  ```tsx
+  2021-10-27 17:49:05,749 - __main__ - INFO - Reading json file: input/cash_register.json
+  2021-10-27 17:49:05,749 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+  2021-10-27 17:49:05,749 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
+  ```
 
-Casos de error (salida recogida en _cash_register_debug.log_):
-```tsx
-2021-10-27 18:42:11,364 - __main__ - INFO - Reading json file: input/cash_register.json
-2021-10-27 18:42:11,364 - __main__ - ERROR - The json file is not correct by negative values
-2021-10-27 18:44:01,721 - __main__ - INFO - Reading json file: input/cash_register.json
-2021-10-27 18:44:01,721 - __main__ - ERROR - The json file is not correct by columns
-```
+  - #### `catalog_check(dict_catalog):`
+    Esta función comprueba que la información recogida del .json sea válida. Comprobamos que exista el mismo número \
+de valores en cada clave (`code`, `name` y `price`), y que los precios sean valores positivos. \
+La función devuelve un mensaje de error si la información no es válida.
+    ```tsx
+    2021-10-27 18:42:11,364 - __main__ - INFO - Reading json file: input/cash_register.json
+    2021-10-27 18:42:11,364 - __main__ - ERROR - The json file is not correct by negative values
+    2021-10-27 18:44:01,721 - __main__ - INFO - Reading json file: input/cash_register.json
+    2021-10-27 18:44:01,721 - __main__ - ERROR - The json file is not correct by columns
+    ```
 
-#### `convert_products(dict_catalog):`
-Recibimos el diccionario con el catálogo leído del json de configuración y creamos a partir de dicho diccionario una \
-lista de productos, siendo cada producto un diccionario. Y la información sería la misma más la clave `units` añadida \
-para llevar el conteo cuando realicemos el escaneo de producto a producto. \
-Devuelve la lista de productos del catálogo (`list_products`) o productos a ser añadidos en el carrito (según la \
-mención de cada unx).
+  - #### `convert_products(dict_catalog):`
+    Esta función convierte el diccionario `dict_catalog`  en una lista de productos, añadiendo la clave `units` con \ 
+valor inicial 0, para llevar el conteo cuando realicemos el escaneo producto a producto. \
+Devuelve la lista de productos del catálogo (`list_products`).
 
-### `get_products():`
-Función encargada de la lectura del json de configuración (_cash_register.json_) para obtener el catálogo de \
-productos con los que trataremos. Una vez recogido dicho catálogo en un diccionario (`dict_catalog`) comprobamos con \
-la función `catalog_check(dict_catalog)` si recibimos bien la información para cada producto leído. Y por último, \
-hacemos uso de la función `convert_products(dict_catalog)` para convertir el json leído a una lista de diccionarios \
-conteniendo cada diccionario la información relacionada a un producto. \
-Devuelve el diccionario del catálogo (`dict_catalog`) y la lista de productos (`list_products`).
+- ### `scan(code, products):`
+  Se trata de la función de escaneo de productos del carrito de compra, recibiendo así el código de producto (`code`) \
+y la lista de productos existentes (`products`). Al producto correspondiente a este `code` se le sumará en uno las \
+unidades de producto y calcularemos su precio total multiplicando sus unidades por su precio unidad.
 
-Si todo ha ido bien, este sería un ejemplo de salida tanto del catálogo como de los productos ya separados:
-```tsx
-2021-10-27 17:49:05,749 - __main__ - INFO - Reading json file: input/cash_register.json
-2021-10-27 17:49:05,749 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
-2021-10-27 17:49:05,749 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0}]
-```
+- ### `group_discount(code, units_ini, units_fin, products):`
+  Función encargada de aplicar los descuentos nx1, siendo n cualquier número entero positivo (`units_ini`). \
+En el caso contemplado en este ejercicio, una vez encontrado el producto que se corresponde con el código (`code`), \
+realizamos primero la comprobación de si el tipo de producto es elegible  para aplicar esta oferta, evaluando su \
+número de escaneos (`if product[const.PRODUCTS_UNITS] >= units_ini:`) en relación a 'n'. \
+Si el producto es elegible, comprobamos si se trata de una oferta nx1 (`if units_fin == 1:`). \
+Una vez sepamos que podemos aplicar esta oferta, miramos si las unidades del producto escaneadas son divisibles \
+entre 'n'.
 
-### `scan(code, products):`
-Se trata de la función de escaneo de productos recibiendo así el código de producto (`code`) y la lista de productos \
-existentes (`products`). Para el producto correspondiente por el código dado se le sumará en uno las unidades de \
-producto `p[const.PRODUCTS_UNITS] = p[const.PRODUCTS_UNITS] + 1`. \
+  - Si se trata de un número divisible, las unidades a pagar son las unidades escaneadas divididas entre 'n', el \
+factor de oferta: 
+  ```tsx
+  if product[const.PRODUCTS_UNITS] % units_ini == 0:
+      product[const.PRODUCTS_UNITS] = product[const.PRODUCTS_UNITS] / units_ini
+   ``` 
+  - Si se trata de un número no divisible, el cálculo de unidades a pagar se realiza aplicando la operación anterior \
+al número par inferior (restando una unidad) y sumándole al resultado la unidad restante.
+  ```tsx
+  elif product[const.PRODUCTS_UNITS] % units_ini != 0:
+      units = product[const.PRODUCTS_UNITS]
+      units -= 1
+      product[const.PRODUCTS_UNITS] = (units / units_ini) + 1
+  ```
+  Y por último lugar, quedaría recalcular el precio total de dicho producto:
+  ```tsx
+  product[const.PRODUCTS_TOTAL_PRICE] = product[const.PRODUCTS_UNITS] * product[const.PRODUCTS_PRICE]
+  ```
+  Si no existe un producto con el código dado, enviamos al log y por pantalla un mensaje de aviso:
+  ```tsx
+  2021-10-27 17:04:52,147 - __main__ - INFO - Not exist 'SHOES' product in cart
+  ```
 
-### `group_discount(code, units_ini, units_fin, products):`
-Descuento para grupo es la función encargada de aplicar los descuentos 2x1, 3x1, 7x1, Nx1... (de momento, ya que a \
-futuro podría ser necesario contemplar también ofertas del tipo 3x2 y es por eso que podría añadirse cómodamente \
-al código los demás casos, a lo mejor siendo necesario dividir la lógica en funciones más cortas y que esta función \
-se quedase englobando el tratamiento de cada caso). \
-Por tanto, para lo que se pide en este ejercicio (2x1) realizamos previamente la comprobación de si las unidades del \
-producto son mayores o igual a las unidades marcadas en la oferta (`if product[const.PRODUCTS_UNITS] >= units_ini:`) \
-para saber si es aplicable en el producto y si sí se da dicha comprobación pasaríamos entonces a preguntarnos si \
-si se trata de una oferta Nx1 (`if units_fin == 1:`). Una vez sepamos que sí podemos aplicar esta oferta faltaría \
-tratar por separado si las unidades del producto es un número par o impar ya que la resolución de cuántos productos \
-pagaríamos al finalizar la compra sería diferente. \
-Si se trata de un número par las unidades finales a pagar pasarían a ser las actuales divididas entre las unidades \
-ofertadas: 
-```tsx
-if product[const.PRODUCTS_UNITS] % units_ini == 0:
-    product[const.PRODUCTS_UNITS] = product[const.PRODUCTS_UNITS] / units_ini
- ``` 
-Y si se trata de un número impar el cálculo se realizaría restando 1 a las unidades actuales, dividir entre las \
-unidades ofertadas y esa unidad restada de antes sumarla al resultado de la división:
-```tsx
-elif product[const.PRODUCTS_UNITS] % units_ini != 0:
-    units = product[const.PRODUCTS_UNITS]
-    units -= 1
-    product[const.PRODUCTS_UNITS] = (units / units_ini) + 1
-```
-Si no existe un producto con el código dado enviamos al log y mostramos por pantalla un mensaje de aviso:
-```tsx
-2021-10-27 17:04:52,147 - __main__ - INFO - Not exist 'SHOES' product in cart
-```
+- ### `bulk_discount(code, units, price, products):`
+  La función de descuento por compra al por mayor recibe el código del producto, el número mínimo de unidades a \
+partir del cual se aplica la oferta, el precio del artículo en promoción y la lista de los productos en el carrito de \
+compra. 
+Si existe el producto que se corresponde al código dado, se comprueba si el tipo de producto es elegible para aplicar \
+esta oferta, teniendo en cuenta su número de escaneos y la configuración de la oferta. \
+Si el producto es elegible para la oferta, el precio del producto pasa a ser el precio definido en la oferta y \
+terminríamos con el recálculo del precio total:
+  ```tsx
+  for product in products:
+      if product[const.PRODUCTS_CODE] == code:
 
-### `bulk_discount(code, units, price, products):`
-Descuento a granel recibe un mínimo de unidades existentes y el cambio a un precio nuevo (en el caso ejemplo del \
-ejercicio se nos pide que por 3 o más VOUCHER unidades el precio por unidad pasa a ser de 19.00). Por tanto si \
-existe el producto que se corresponde al código dado miramos si sus unidades son igual o mayor al mínimo dado y en \
-caso afirmativo el valor de la clave precio pasa a valer lo que el nuevo precio marque:
-```tsx
-for product in products:
-    if product[const.PRODUCTS_CODE] == code:
+          exist = True
 
-        exist = True
+          if product[const.PRODUCTS_UNITS] >= units:
+              product[const.PRODUCTS_PRICE] = price
+              product[const.PRODUCTS_TOTAL_PRICE] = product[const.PRODUCTS_UNITS] * product[const.PRODUCTS_PRICE]
+              logger.info(
+                  "New bulk discount on '{}' items with {} units chosen or more and the price per unit be {}".
+                  format(code, units, price))
+          else:
+              break
+  ```
 
-        if product[const.PRODUCTS_UNITS] >= units:
-            product[const.PRODUCTS_PRICE] = price
-            logger.info(
-                "New bulk discount on '{}' items with {} units chosen or more and the price per unit be {}".
-                format(code, units, price))
-        else:
-            break
-```
+- ### `total(products):`
+  Finalmente, esta función se encarga de calcular el precio final a pagar por todo el carrito de compra. Es decir, \
+sumando los precios totales (`total_price`) de los productos. Esta función devuelve el precio final a pagar \
+(`final_price`).
 
-### `total(products):`
-Y por último, esta función se encarga de calcular el precio total a pagar por todo el carrito. Es decir, \
-recorremos cada producto y obtenemos su total multiplicando las unidades leídas de dicho producto por su precio \
-unidad y sumando el resultado con el mismo cálculo para el siguiente producto. \
-Por tanto, devuelve el precio total a pagar (`total_price`).
+## Ejecución:
+El proceso se puede ejecutar desde terminal o desde cualquier plataforma mediante el fichero _cash_register_master.py_. 
+
+- Ejecución desde terminal:
+  ```tsx
+  eva@eva-Modern-14-B10MW:~/PycharmProjects/cash-register$ python cash_register_master.py 
+  2021-10-28 10:00:22,125 - __main__ - INFO - Reading json file: input/cash_register.json
+  Reading json file: input/cash_register.json
+  2021-10-28 10:00:22,126 - __main__ - INFO - Catalog: {u'price': [5.0, 20.0, 7.5], u'code': [u'VOUCHER', u'TSHIRT', u'PANTS'], u'name': [u'Gift Card', u'Summer T-Shirt', u'Summer Pants']}
+  Catalog: {u'price': [5.0, 20.0, 7.5], u'code': [u'VOUCHER', u'TSHIRT', u'PANTS'], u'name': [u'Gift Card', u'Summer T-Shirt', u'Summer Pants']}
+  2021-10-28 10:00:22,126 - __main__ - INFO - Products: [{'units': 0, 'total_price': 0, 'price': 5.0, 'code': u'VOUCHER', 'name': u'Gift Card'}, {'units': 0, 'total_price': 0, 'price': 20.0, 'code': u'TSHIRT', 'name': u'Summer T-Shirt'}, {'units': 0, 'total_price': 0, 'price': 7.5, 'code': u'PANTS', 'name': u'Summer Pants'}]
+  Products: [{'units': 0, 'total_price': 0, 'price': 5.0, 'code': u'VOUCHER', 'name': u'Gift Card'}, {'units': 0, 'total_price': 0, 'price': 20.0, 'code': u'TSHIRT', 'name': u'Summer T-Shirt'}, {'units': 0, 'total_price': 0, 'price': 7.5, 'code': u'PANTS', 'name': u'Summer Pants'}]
+  2021-10-28 10:00:22,126 - __main__ - INFO - ********************* TEST 4
+  ********************* TEST 4
+  2021-10-28 10:00:22,126 - __main__ - INFO - Scanned a 'VOUCHER' unit
+  Scanned a 'VOUCHER' unit
+  2021-10-28 10:00:22,126 - __main__ - INFO - Scanned a 'TSHIRT' unit
+  Scanned a 'TSHIRT' unit
+  2021-10-28 10:00:22,126 - __main__ - INFO - Scanned a 'VOUCHER' unit
+  Scanned a 'VOUCHER' unit
+  2021-10-28 10:00:22,126 - __main__ - INFO - Scanned a 'VOUCHER' unit
+  Scanned a 'VOUCHER' unit
+  2021-10-28 10:00:22,126 - __main__ - INFO - Scanned a 'PANTS' unit
+  Scanned a 'PANTS' unit
+  2021-10-28 10:00:22,126 - __main__ - INFO - Scanned a 'TSHIRT' unit
+  Scanned a 'TSHIRT' unit
+  2021-10-28 10:00:22,126 - __main__ - INFO - Scanned a 'TSHIRT' unit
+  Scanned a 'TSHIRT' unit
+  2021-10-28 10:00:22,126 - __main__ - INFO - Products: [{'units': 3, 'total_price': 15.0, 'price': 5.0, 'code': u'VOUCHER', 'name': u'Gift Card'}, {'units': 3, 'total_price': 60.0, 'price': 20.0, 'code': u'TSHIRT', 'name': u'Summer T-Shirt'}, {'units': 1, 'total_price': 7.5, 'price': 7.5, 'code': u'PANTS', 'name': u'Summer Pants'}]
+  Products: [{'units': 3, 'total_price': 15.0, 'price': 5.0, 'code': u'VOUCHER', 'name': u'Gift Card'}, {'units': 3, 'total_price': 60.0, 'price': 20.0, 'code': u'TSHIRT', 'name': u'Summer T-Shirt'}, {'units': 1, 'total_price': 7.5, 'price': 7.5, 'code': u'PANTS', 'name': u'Summer Pants'}]
+  2021-10-28 10:00:22,126 - __main__ - INFO - New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+  New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+  2021-10-28 10:00:22,126 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+  New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+  2021-10-28 10:00:22,126 - __main__ - INFO - Products: [{'units': 2, 'total_price': 10.0, 'price': 5.0, 'code': u'VOUCHER', 'name': u'Gift Card'}, {'units': 3, 'total_price': 57.0, 'price': 19.0, 'code': u'TSHIRT', 'name': u'Summer T-Shirt'}, {'units': 1, 'total_price': 7.5, 'price': 7.5, 'code': u'PANTS', 'name': u'Summer Pants'}]
+  Products: [{'units': 2, 'total_price': 10.0, 'price': 5.0, 'code': u'VOUCHER', 'name': u'Gift Card'}, {'units': 3, 'total_price': 57.0, 'price': 19.0, 'code': u'TSHIRT', 'name': u'Summer T-Shirt'}, {'units': 1, 'total_price': 7.5, 'price': 7.5, 'code': u'PANTS', 'name': u'Summer Pants'}]
+  2021-10-28 10:00:22,126 - __main__ - INFO - Total cart price: 74.5
+  Total cart price: 74.5
+
+  ```
+
+- Ejecución desde PyCharm:
+  ```tsx
+  /usr/bin/python3.6 /home/eva/PycharmProjects/cash-register/cash_register_master.py
+  Reading json file: input/cash_register.json
+  Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0, 'total_price': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0, 'total_price': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0, 'total_price': 0}]
+  ********************* TEST 4
+  Scanned a 'VOUCHER' unit
+  Scanned a 'TSHIRT' unit
+  Scanned a 'VOUCHER' unit
+  Scanned a 'VOUCHER' unit
+  Scanned a 'PANTS' unit
+  Scanned a 'TSHIRT' unit
+  Scanned a 'TSHIRT' unit
+  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3, 'total_price': 15.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3, 'total_price': 60.0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1, 'total_price': 7.5}]
+  New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+  New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0, 'total_price': 10.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3, 'total_price': 57.0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1, 'total_price': 7.5}]
+  Total cart price: 74.5
+
+  Process finished with exit code 0
+  ```
+
+## Comentarios adicionales:
+### Descuentos 2x1:
+El código está hecho de tal forma que no solo contemplamos la oferta requerida sino que se trataría con ofertas de \
+todo número x 1 ya que siguen el mismo cálculo de reajuste de unidades a pagar una vez aplicado el descuento.
+
+### Función `total()`:
+Esta función tuvo una primera versión donde se realizada el cálculo final del carrito haciendo el cálculo total \
+de cada producto mirando su número de unidades y precio unidad. En la versión actual realiza solo la suma de los \
+totales ya que cada precio total de producto se encuentra ya calculado y guardado en un campo.
