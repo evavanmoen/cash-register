@@ -1496,3 +1496,16 @@
 2021-10-29 23:50:02,359 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
 2021-10-29 23:50:02,359 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0, 'total_price': 10.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3, 'total_price': 57.0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1, 'total_price': 7.5}]
 2021-10-29 23:50:02,359 - __main__ - INFO - Total cart price: 74.5
+2021-10-30 00:07:48,590 - __main__ - INFO - Reading json file: input/cash_register.json
+2021-10-30 00:07:48,590 - __main__ - INFO - Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
+2021-10-30 00:07:48,590 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0, 'total_price': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0, 'total_price': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0, 'total_price': 0}]
+2021-10-30 00:07:48,590 - __main__ - INFO - ********************* TEST 3
+2021-10-30 00:07:48,590 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-30 00:07:48,590 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-30 00:07:48,590 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-30 00:07:48,590 - __main__ - INFO - Scanned a 'VOUCHER' unit
+2021-10-30 00:07:48,590 - __main__ - INFO - Scanned a 'TSHIRT' unit
+2021-10-30 00:07:48,590 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1, 'total_price': 5.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 4, 'total_price': 80.0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0, 'total_price': 0}]
+2021-10-30 00:07:48,590 - __main__ - INFO - New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
+2021-10-30 00:07:48,590 - __main__ - INFO - Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1, 'total_price': 5.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 4, 'total_price': 76.0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0, 'total_price': 0}]
+2021-10-30 00:07:48,591 - __main__ - INFO - Total cart price: 81.0

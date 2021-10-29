@@ -31,8 +31,7 @@ El directorio principal consta de varios directorios y del fichero a ejecutar (_
 - #### /constants
   Incluye el fichero _constants.py_ donde figuran todas las constantes a utilizar y el fichero init correspondiente.
 - #### /input
-  Incluye _cash_register.json_, que consiste en el fichero .json con la información de los \
-productos a tratar.
+  Incluye _cash_register.json_, que consiste en el fichero .json con la información de los productos a tratar.
 - #### /logger
   Incluye _logger_configurator.py_, utilizado para conseguir el tratamiento de los logs deseado. En este caso \
 necesitando ser vistos tanto en local como desde fichero (/logs/_cash_register_debug.log_).
@@ -48,8 +47,8 @@ las especificaciones de este ejercicio.
 - Función de aplicación de promoción al por mayor `bulk_discount(code, units, price, products)`
 - Función de cálculo del coste total `total(products)`
 - Funciones auxiliares `catalog_check(dict_catalog)` y `convert_products(dict_catalog)`
-- Función `main()` con los casos de prueba requeridos y algunos otros adicionales que dejo comentados para que \
-puedanmprobarse de uno en uno. 
+- Función `main()` con los casos de prueba requeridos y algunos otros adicionales que dejo comentados para \
+que puedan probarse de uno en uno. 
 
  #### Caso de prueba 
   
@@ -62,15 +61,13 @@ puedanmprobarse de uno en uno.
   
       # ...
   
-      # CASE 4 (Items: VOUCHER, TSHIRT, VOUCHER, VOUCHER, PANTS, TSHIRT, TSHIRT - Total: 74.50€)
+      # CASE 3 (Items: TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT - Total: 81.00€)
       # (with 2x1 in VOUCHER items and 3 or more TSHIRT items the price per unit should be 19.00)
-      logger.info("********************* TEST 4")
-      scan("VOUCHER", products)
+      logger.info("********************* TEST 3")
+      scan("TSHIRT", products)
+      scan("TSHIRT", products)
       scan("TSHIRT", products)
       scan("VOUCHER", products)
-      scan("VOUCHER", products)
-      scan("PANTS", products)
-      scan("TSHIRT", products)
       scan("TSHIRT", products)
       
       logger.info("Products: {}".format(products))
@@ -91,19 +88,16 @@ puedanmprobarse de uno en uno.
   Reading json file: input/cash_register.json
   Catalog: {'code': ['VOUCHER', 'TSHIRT', 'PANTS'], 'name': ['Gift Card', 'Summer T-Shirt', 'Summer Pants'], 'price': [5.0, 20.0, 7.5]}
   Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 0, 'total_price': 0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 0, 'total_price': 0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0, 'total_price': 0}]
-  ********************* TEST 4
-  Scanned a 'VOUCHER' unit
-  Scanned a 'TSHIRT' unit
-  Scanned a 'VOUCHER' unit
-  Scanned a 'VOUCHER' unit
-  Scanned a 'PANTS' unit
+  ********************* TEST 3
   Scanned a 'TSHIRT' unit
   Scanned a 'TSHIRT' unit
-  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 3, 'total_price': 15.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 3, 'total_price': 60.0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1, 'total_price': 7.5}]
-  New group discount on 'VOUCHER' items with 2 units chosen and paid for 1 unit (2x1)
+  Scanned a 'TSHIRT' unit
+  Scanned a 'VOUCHER' unit
+  Scanned a 'TSHIRT' unit
+  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1, 'total_price': 5.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 20.0, 'units': 4, 'total_price': 80.0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0, 'total_price': 0}]
   New bulk discount on 'TSHIRT' items with 3 units chosen or more and the price per unit be 19.0
-  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 2.0, 'total_price': 10.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 3, 'total_price': 57.0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 1, 'total_price': 7.5}]
-  Total cart price: 74.5
+  Products: [{'code': 'VOUCHER', 'name': 'Gift Card', 'price': 5.0, 'units': 1, 'total_price': 5.0}, {'code': 'TSHIRT', 'name': 'Summer T-Shirt', 'price': 19.0, 'units': 4, 'total_price': 76.0}, {'code': 'PANTS', 'name': 'Summer Pants', 'price': 7.5, 'units': 0, 'total_price': 0}]
+  Total cart price: 81.0
   
   Process finished with exit code 0
   ```
@@ -131,11 +125,11 @@ A continuación se muestran los detalles de la lógica de cada función:
 
 - ### `get_products():`
   Función encargada de la lectura del .json (_cash_register.json_) para obtener el catálogo de productos con los \
-que trataremos. Una vez recogido dicho catálogo en un diccionario (`dict_catalog`), comprobamos con la función \
-`catalog_check(dict_catalog)` si la información es válida. Por último, hacemos uso de la función \
-`convert_products(dict_catalog)` para convertir `dict_catalog` en una lista de diccionarios. Cada uno de esos \
-diccionarios contiene la información de un producto. \
-`get_products()` devuelve el diccionario del catálogo (`dict_catalog`) y la lista de productos \
+que trataremos. Una vez recogido dicho catálogo en un diccionario (`dict_catalog`), comprobamos con la \
+función `catalog_check(dict_catalog)` si la información es válida. Por último, hacemos uso de la función \
+`convert_products(dict_catalog)` para convertir `dict_catalog` en una lista de diccionarios. Cada uno de \
+esos diccionarios contiene la información de un producto. \
+Esta función nos devuelve el diccionario del catálogo (`dict_catalog`) y la lista de productos \
 (`list_products`). \
 A continuación se muestra lo que sería un print en la salida de _cash_register_debug.log_:
 
@@ -148,7 +142,8 @@ A continuación se muestra lo que sería un print en la salida de _cash_register
   - #### `catalog_check(dict_catalog):`
     Esta función comprueba que la información recogida del .json sea válida. Comprobamos que exista el \
 mismo número de valores en cada clave (`code`, `name` y `price`), y que los precios sean valores \
-positivos. La función devuelve un mensaje de error si la información no es válida.
+positivos. \
+La función devuelve un mensaje de error si la información no es válida.
     ```tsx
     2021-10-27 18:42:11,364 - __main__ - INFO - Reading json file: input/cash_register.json
     2021-10-27 18:42:11,364 - __main__ - ERROR - The json file is not correct by negative values
@@ -157,8 +152,9 @@ positivos. La función devuelve un mensaje de error si la información no es vá
     ```
 
   - #### `convert_products(dict_catalog):`
-    Esta función convierte el diccionario `dict_catalog`  en una lista de productos, añadiendo la clave \
-`units` con valor inicial 0, para llevar el conteo cuando realicemos el escaneo producto a producto. \
+    Esta función convierte el diccionario `dict_catalog`  en una lista de productos, añadiendo las \
+claves `total_price` y `units` con valores iniciales a 0. `units` sirve para llevar el conteo cuando \
+realicemos el escaneo producto a producto. \
 Devuelve la lista de productos del catálogo (`list_products`).
 
 - ### `scan(code, products):`
