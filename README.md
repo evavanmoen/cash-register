@@ -298,3 +298,6 @@ Esta función tuvo una primera versión donde se realizada el cálculo final del
 de cada producto mirando su número de unidades y precio unidad. En la versión actual realiza solo la suma de \
 los totales ya que cada precio total de producto se encuentra ya calculado y guardado en el campo \
 `total_price` de cada producto.
+
+\
+![Alt text](uno.png?raw=true)
